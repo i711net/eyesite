@@ -2,17 +2,36 @@
 
 按《眼科学》教材章节编排的图文学习网站，纯静态 HTML/CSS/JS，无需构建工具，可直接部署到 GitHub Pages 或 Cloudflare Pages。
 
+**全部19章已完成上线**，共95道随堂测验题（每章5题）。
+
 ## 目录结构
 
 ```
 /
-├── index.html              # 首页：章节导航 + 全部章节卡片
+├── index.html              # 首页：章节导航 + 全部19章卡片
 ├── assets/
 │   ├── style.css           # 全站共用样式
 │   └── site.js             # 侧边栏交互 + 测验引擎 + 眼球图交互
 ├── chapters/
-│   ├── 01-anatomy.html     # 第1章 眼的应用解剖与生理
-│   └── 02-refraction.html  # 第2章 屈光与调节
+│   ├── 01-anatomy.html         第1章 眼的应用解剖与生理
+│   ├── 02-refraction.html      第2章 屈光与调节
+│   ├── 03-examination.html     第3章 眼科检查法
+│   ├── 04-eyelid.html          第4章 眼睑病
+│   ├── 05-lacrimal.html        第5章 泪器病
+│   ├── 06-conjunctiva.html     第6章 结膜病
+│   ├── 07-cornea.html          第7章 角膜病
+│   ├── 08-sclera.html          第8章 巩膜病
+│   ├── 09-uveitis.html         第9章 葡萄膜炎
+│   ├── 10-cataract.html        第10章 晶状体病（白内障）
+│   ├── 11-glaucoma.html        第11章 青光眼
+│   ├── 12-vitreous.html        第12章 玻璃体病
+│   ├── 13-retina.html          第13章 视网膜病
+│   ├── 14-optic-nerve.html     第14章 视神经疾病
+│   ├── 15-strabismus.html      第15章 斜视与弱视
+│   ├── 16-trauma.html          第16章 眼外伤
+│   ├── 17-orbit.html           第17章 眼眶病
+│   ├── 18-tumor.html           第18章 眼部肿瘤
+│   └── 19-systemic.html        第19章 全身病的眼部表现
 └── README.md
 ```
 
@@ -39,16 +58,6 @@ git push -u origin main
 5. 之后每次 `git push`，Cloudflare Pages 会自动重新部署
 
 > 也完全兼容 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/ (root)` 目录即可，二选一或两个都开都可以。
-
-## 后续新增章节的方法
-
-每新增一章，会在 `chapters/` 下新增一个 `0X-xxx.html` 文件，并且需要同步更新以下 3 处（我会在交付新章节时一并帮你改好，此处仅作说明）：
-
-1. `index.html` 中：
-   - 左侧侧边栏对应章节的 `<a>` 去掉 `disabled` 类，`href` 指向新文件
-   - 章节卡片区域对应卡片从 `<div class="chapter-card locked">` 改为 `<a class="chapter-card" href="...">`，`badge` 文字改为"已上线"
-2. 已有的所有 `chapters/*.html` 文件里，侧边栏对应章节同样去掉 `disabled`
-3. 新章节页面自身的"上一章 / 下一章"链接对应更新
 
 ## 内容说明
 
