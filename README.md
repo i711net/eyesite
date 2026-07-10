@@ -59,6 +59,13 @@ git push -u origin main
 
 > 也完全兼容 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/ (root)` 目录即可，二选一或两个都开都可以。
 
+## 中西医双轨道
+
+- `index.html` / `chapters/` —— 西医《眼科学》，19章全部完成
+- `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，目前完成总论前2章（T1中医眼科发展概要、T2眼与脏腑经络的关系），其余17章制作中
+- 两个首页顶部都有"西医眼科学 / 中医眼科学"切换标签，可随时互跳
+- 中医页面通过 `<body class="tcm">` 应用暖棕色主题（区别于西医的青蓝主题），共用同一份 `assets/style.css` 和 `assets/site.js`
+
 ## 内容说明
 
 内容依据国内《眼科学》规培/本科教材大纲自行编写整理，用于考点复习，不替代官方教材与临床指南；具体诊疗请以最新临床指南及主治医师指导为准。

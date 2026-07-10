@@ -167,6 +167,19 @@ a{color:inherit;}
 
 footer.site-footer{padding:30px 60px 60px; font-size:12.5px; color:var(--muted); max-width:980px;}
 
+/* ---------- Track switcher (西医/中医) ---------- */
+.track-switch{display:flex; gap:8px; margin:0 0 18px;}
+.track-switch a{
+  font-size:12.5px; padding:6px 14px; border-radius:20px; text-decoration:none;
+  border:1px solid var(--line); color:var(--muted); font-family:'IBM Plex Mono',monospace;
+}
+.track-switch a.current{background:var(--teal-dark); color:#fff; border-color:var(--teal-dark);}
+.track-switch a:not(.current):hover{border-color:var(--teal);}
+
+/* ---------- TCM accent (used only on tcm pages via .tcm class on body) ---------- */
+body.tcm{--teal:#8A5A2E; --teal-dark:#5C3B1E; --gold:#B33F32; --gold-soft:#F3E2D6; --alert:#1F6F76; --alert-soft:#E3F0EF;}
+
+
 @media (max-width: 860px){
   .sidebar{position:fixed; left:-280px; z-index:20; transition:left .25s; box-shadow:6px 0 20px rgba(0,0,0,0.2);}
   .sidebar.open{left:0;}
