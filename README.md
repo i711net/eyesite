@@ -62,7 +62,7 @@ git push -u origin main
 ## 中西医双轨道
 
 - `index.html` / `chapters/` —— 西医《眼科学》，19章全部完成
-- `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，目前完成总论4章（T1发展概要、T2脏腑经络关系、T3病因病机、T4眼科诊法），共20道测验题，其余15章制作中
+- `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，目前完成总论全部5章（T1-T5）+ 胞睑病3章（T6针眼·眼丹、T7胞生痰核·睑弦赤烂、T8风赤疮痍等），共8章、40道测验题，其余11章制作中
 - 两个首页顶部都有"西医眼科学 / 中医眼科学"切换标签，可随时互跳
 - 中医页面通过 `<body class="tcm">` 应用暖棕色主题（区别于西医的青蓝主题），共用同一份 `assets/style.css` 和 `assets/site.js`
 
