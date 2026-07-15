@@ -59,12 +59,13 @@ git push -u origin main
 
 > 也完全兼容 GitHub Pages：仓库 Settings → Pages → Source 选 `main` 分支 `/ (root)` 目录即可，二选一或两个都开都可以。
 
-## 中西医双轨道
+## 三条学习轨道
 
 - `index.html` / `chapters/` —— 西医《眼科学》，19章全部完成
-- `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，**全部19章已完成**：总论5章（T1-T5）+ 胞睑病3章（T6-T8）+ 两眦病1章（T9）+ 白睛病2章（T10-T11）+ 黑睛病2章（T12-T13）+ 瞳神病5章（T14-T18）+ 目外伤1章（T19），共95道测验题
-- 两个首页顶部都有"西医眼科学 / 中医眼科学"切换标签，可随时互跳
-- 中医页面通过 `<body class="tcm">` 应用暖棕色主题（区别于西医的青蓝主题），共用同一份 `assets/style.css` 和 `assets/site.js`
+- `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，19章全部完成
+- `optometry-index.html` / `optometry-chapters/` —— 视光学，**全部7章已完成**：O1视觉光学基础、O2验光技术、O3双眼视觉功能与视疲劳、O4角膜塑形镜与近视防控、O5老视与渐进多焦点镜片、O6隐形眼镜学、O7低视力康复，共35道测验题
+- 三个首页顶部都有"西医眼科学 / 中医眼科学 / 视光学"切换标签，可随时互跳
+- 视光学页面通过 `<body class="optometry">` 应用靛蓝+琥珀主题（区别于西医青蓝、中医暖棕），共用同一份 `assets/style.css` 和 `assets/site.js`
 
 ## 内容说明
 
