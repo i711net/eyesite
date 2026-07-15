@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5章 · 老视与渐进多焦点镜片 · 视光学习站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="optometry">
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../optometry-index.html" style="text-decoration:none;">
+        <svg class="eyemark" viewBox="0 0 40 40"><path d="M2 20C8 8 32 8 38 20C32 32 8 32 2 20Z" fill="none" stroke="#EAF3F2" stroke-width="2"/><circle cx="20" cy="20" r="7" fill="#D98A3D"/><circle cx="20" cy="20" r="3" fill="#28345C"/></svg>
+        <h1>视光学习站</h1>
+      </a>
+      <p>规培备考 · 考点导向 · 图文精讲</p>
+    </div>
+    <div class="nav-group-label">视觉光学与验光</div>
+    <a class="nav-item" href="01-optics-basics.html"><span class="num">O1</span>视觉光学基础</a>
+    <a class="nav-item" href="02-refraction-technique.html"><span class="num">O2</span>验光技术</a>
+    <a class="nav-item" href="03-binocular-vision.html"><span class="num">O3</span>双眼视觉功能与视疲劳</a>
+    <div class="nav-group-label">屈光矫正与近视防控</div>
+    <a class="nav-item" href="04-orthokeratology.html"><span class="num">O4</span>角膜塑形镜与近视防控</a>
+    <a class="nav-item active" href="05-presbyopia.html"><span class="num">O5</span>老视与渐进多焦点镜片</a>
+    <a class="nav-item" href="06-contact-lens.html"><span class="num">O6</span>隐形眼镜学</a>
+    <div class="nav-group-label">视功能康复</div>
+    <a class="nav-item" href="07-low-vision.html"><span class="num">O7</span>低视力康复</a>
+  </nav>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰ 章节目录</button>
+      <a class="home-link" href="../optometry-index.html">← 返回首页</a>
+    </div>
+
+    <section class="chapter" id="ch-presbyopia">
+      <div class="chapter-head"><span class="chnum">CH.O5</span><h2>老视与渐进多焦点镜片</h2></div>
+
+      <div class="section">
+        <h3>老视的光学本质回顾</h3>
+        <p>晶状体弹性随年龄增长逐渐下降、睫状肌收缩功能减退，调节幅度随之渐进性下降，多数人在<strong>40岁左右</strong>开始出现看近困难的老视症状。这一过程是生理性、不可逆的，与屈光状态（近视、远视、正视）无关，回顾第O3章的Hofstetter公式，可用于估算不同年龄段的理论调节幅度。</p>
+      </div>
+
+      <div class="section">
+        <h3>ADD（附加光度）的确定原则</h3>
+        <div class="figure">
+          <svg viewBox="0 0 460 150" width="100%">
+            <rect width="460" height="150" fill="#FAFAF7"/>
+            <g font-family="Noto Sans SC" font-size="12" fill="#16232A">
+              <text x="20" y="22" font-weight="600">ADD确定的储备原则</text>
+              <rect x="20" y="40" width="180" height="90" rx="8" fill="#E8EDF6" stroke="#3D5A99"/>
+              <text x="30" y="62" font-weight="600" fill="#3D5A99">现有调节幅度</text>
+              <text x="30" y="84" font-size="11">（按年龄估算或实测）</text>
+              <path d="M205 85 L235 85" stroke="#5C6B6E" stroke-width="2" marker-end="url(#aO5)"/>
+              <rect x="235" y="40" width="200" height="90" rx="8" fill="#F6E4CC" stroke="#D98A3D"/>
+              <text x="245" y="62" font-weight="600" fill="#D98A3D">保留一半作为储备</text>
+              <text x="245" y="84" font-size="11">不足部分才用ADD补足</text>
+              <text x="245" y="102" font-size="10" fill="#5C6B6E">避免长期近距离用眼疲劳</text>
+            </g>
+            <defs><marker id="aO5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5C6B6E"/></marker></defs>
+          </svg>
+          <figcaption>FIG O5-1 · ADD附加光度确定的"保留调节储备"原则</figcaption>
+        </div>
+        <p>确定老花镜的<strong>ADD（近附加光度）</strong>时，遵循的基本原则是<strong>保留至少一半的调节幅度作为储备</strong>，不宜将全部调节幅度都用于满足近距离用眼需求——若ADD给得过高、耗尽全部调节储备，会导致近距离持续用眼时缺乏缓冲、容易疲劳。</p>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          ADD并非"年龄越大给得越多"这么简单，还需结合患者实际工作距离需求（如从事精细近距离工作者所需ADD可能更高）个性化调整，是验光配镜环节中最需要结合患者生活方式沟通的部分。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>三类老花镜设计对比</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>单光镜</h4><p>仅含近用光度，视野内只有一个焦点，适合专门用于近距离阅读的场景，看远需摘镜或更换其他眼镜。</p></div>
+          <div class="compare-card"><h4>双光镜（Bifocal）</h4><p>镜片明显分为远用区和近用区两部分，两区之间有肉眼可见的分界线，中间距离（如电脑屏幕距离）视物不便。</p></div>
+          <div class="compare-card"><h4>渐进多焦点镜片（PAL）</h4><p>从上方远用区到下方近用区屈光力连续渐变，无可见分界线，同时兼顾远、中、近全程视力需求，是目前应用最广泛的老花矫正方式。</p></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>渐进片的光学设计与初戴适应</h3>
+        <p>渐进片的核心结构是连接远用区和近用区的<strong>渐变通道（corridor）</strong>，屈光力沿通道连续变化。由于光学设计的物理限制，渐变通道两侧不可避免地存在<strong>周边像差区</strong>，患者通过这一区域注视时会感受到图像变形、摇晃——这正是许多初戴渐进片者出现<strong>短暂头晕、"踏空感"</strong>的光学根源，通常需要数天到数周的适应期，视觉系统逐渐学会有意识地转动头部、通过特定通道区域注视目标。</p>
+        <div class="alert-box">
+          <span class="tag">易混淆点</span>
+          渐变通道设计存在"长度-宽度"的权衡：通道越短，可用近用区域相对越窄但周边像差集中、适应期通常更短；通道越长，像差分布更分散、视觉过渡更平顺，但需要更大的镜框高度才能容纳完整设计。这不是简单的"越贵越好"，而是需要结合患者镜框选择和适应能力权衡的设计取舍。
+        </div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-head"><h3>随堂小测 · 老视与渐进多焦点镜片</h3><span class="quiz-progress"><span class="cur">1</span>/<span class="tot">5</span></span></div>
+
+        <div class="q-block active" data-answer="1">
+          <div class="q-text">1. 老视症状通常开始出现于大约什么年龄段？</div>
+          <button class="q-opt">20岁左右</button>
+          <button class="q-opt">40岁左右</button>
+          <button class="q-opt">60岁左右</button>
+          <button class="q-opt">与年龄无关</button>
+          <div class="q-explain">多数人在40岁左右开始出现调节幅度明显下降、看近困难的老视症状，这是生理性、不可逆的年龄相关性改变。</div>
+        </div>
+
+        <div class="q-block" data-answer="2">
+          <div class="q-text">2. 确定老花镜ADD附加光度的基本原则是？</div>
+          <button class="q-opt">给到患者能接受的最大值即可</button>
+          <button class="q-opt">用尽患者全部调节幅度</button>
+          <button class="q-opt">保留至少一半调节幅度作为储备</button>
+          <button class="q-opt">与患者调节幅度无关</button>
+          <div class="q-explain">确定ADD的基本原则是保留至少一半的调节幅度作为储备，避免耗尽全部调节储备导致近距离持续用眼时容易疲劳。</div>
+        </div>
+
+        <div class="q-block" data-answer="3">
+          <div class="q-text">3. 目前应用最广泛、能同时兼顾远中近全程视力的老花矫正方式是？</div>
+          <button class="q-opt">单光镜</button>
+          <button class="q-opt">双光镜</button>
+          <button class="q-opt">框架平光镜</button>
+          <button class="q-opt">渐进多焦点镜片（PAL）</button>
+          <div class="q-explain">渐进多焦点镜片从上方远用区到下方近用区屈光力连续渐变，无可见分界线，同时兼顾远、中、近全程视力需求，是目前应用最广泛的设计。</div>
+        </div>
+
+        <div class="q-block" data-answer="0">
+          <div class="q-text">4. 初戴渐进片者出现短暂头晕、"踏空感"的光学根源是？</div>
+          <button class="q-opt">渐变通道两侧的周边像差区</button>
+          <button class="q-opt">镜片颜色过深</button>
+          <button class="q-opt">镜框材质过重</button>
+          <button class="q-opt">与光学设计完全无关</button>
+          <div class="q-explain">渐变通道两侧不可避免存在周边像差区，患者通过该区域注视时会感受到图像变形摇晃，这是初戴渐进片者头晕、踏空感的光学根源，通常需要一定适应期。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">5. 关于渐进片渐变通道长度的设计权衡，下列说法正确的是？</div>
+          <button class="q-opt">通道越短，需要的镜框高度必然越大</button>
+          <button class="q-opt">通道越长，像差分布更分散、过渡更平顺，但需要更大镜框高度</button>
+          <button class="q-opt">通道长度与镜框高度完全无关</button>
+          <button class="q-opt">通道长度只影响价格，不影响视觉体验</button>
+          <div class="q-explain">渐变通道越长，周边像差分布更分散、视觉过渡更平顺，但需要更大的镜框高度才能容纳完整设计，这是设计上需要权衡取舍的关键参数。</div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="ghost" data-prev disabled>上一题</button>
+          <button data-next>下一题</button>
+        </div>
+        <div class="quiz-result"><div class="score"></div><p>回顾错题，返回上方对应知识点巩固记忆</p></div>
+      </div>
+
+      <div class="chapter-footer-nav">
+        <a href="04-orthokeratology.html"><span class="lbl">← 上一章</span>角膜塑形镜与近视防控</a>
+        <a class="next" href="06-contact-lens.html"><span class="lbl">下一章 →</span>隐形眼镜学</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      内容依据国内视光学/眼视光医学专业课程大纲自行编写整理，用于考点复习，不替代官方教材与临床指南。
+    </footer>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

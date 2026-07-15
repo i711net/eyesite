@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 · 视觉光学基础 · 视光学习站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="optometry">
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../optometry-index.html" style="text-decoration:none;">
+        <svg class="eyemark" viewBox="0 0 40 40"><path d="M2 20C8 8 32 8 38 20C32 32 8 32 2 20Z" fill="none" stroke="#EAF3F2" stroke-width="2"/><circle cx="20" cy="20" r="7" fill="#D98A3D"/><circle cx="20" cy="20" r="3" fill="#28345C"/></svg>
+        <h1>视光学习站</h1>
+      </a>
+      <p>规培备考 · 考点导向 · 图文精讲</p>
+    </div>
+    <div class="nav-group-label">视觉光学与验光</div>
+    <a class="nav-item active" href="01-optics-basics.html"><span class="num">O1</span>视觉光学基础</a>
+    <a class="nav-item" href="02-refraction-technique.html"><span class="num">O2</span>验光技术</a>
+    <a class="nav-item" href="03-binocular-vision.html"><span class="num">O3</span>双眼视觉功能与视疲劳</a>
+    <div class="nav-group-label">屈光矫正与近视防控</div>
+    <a class="nav-item" href="04-orthokeratology.html"><span class="num">O4</span>角膜塑形镜与近视防控</a>
+    <a class="nav-item" href="05-presbyopia.html"><span class="num">O5</span>老视与渐进多焦点镜片</a>
+    <a class="nav-item" href="06-contact-lens.html"><span class="num">O6</span>隐形眼镜学</a>
+    <div class="nav-group-label">视功能康复</div>
+    <a class="nav-item" href="07-low-vision.html"><span class="num">O7</span>低视力康复</a>
+  </nav>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰ 章节目录</button>
+      <a class="home-link" href="../optometry-index.html">← 返回首页</a>
+    </div>
+
+    <section class="chapter" id="ch-optics-basics">
+      <div class="chapter-head"><span class="chnum">CH.O1</span><h2>视觉光学基础</h2></div>
+
+      <div class="section">
+        <h3>屈光度：视光学的基本度量单位</h3>
+        <p>屈光力用<strong>屈光度（D，Diopter）</strong>表示，定义为焦距（以米为单位）的倒数：<strong>D = 1/f(m)</strong>。焦距越短，屈光力越强。例如焦距0.5米的透镜屈光力为2.00D，焦距0.25米的透镜屈光力为4.00D。这个换算关系是理解验光处方、镜片度数的最基础工具。</p>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          正透镜（凸透镜）使光线会聚，屈光度为正值，矫正远视；负透镜（凹透镜）使光线发散，屈光度为负值，矫正近视——正负号本身就直接反映了透镜对光线的作用方向。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>模型眼：简化的眼屈光系统</h3>
+        <div class="figure">
+          <svg viewBox="0 0 480 180" width="100%">
+            <rect width="480" height="180" fill="#FAFAF7"/>
+            <g font-family="Noto Sans SC" font-size="12" fill="#16232A">
+              <text x="20" y="24" font-weight="600">简化模型眼示意</text>
+              <line x1="20" y1="90" x2="120" y2="90" stroke="#5C6B6E" stroke-width="1.5"/>
+              <circle cx="130" cy="90" r="6" fill="#D98A3D"/>
+              <text x="105" y="115" font-size="11" fill="#5C6B6E">单一折射面</text>
+              <path d="M136 60 Q220 90 136 120" fill="none" stroke="#3D5A99" stroke-width="2"/>
+              <line x1="136" y1="90" x2="380" y2="90" stroke="#5C6B6E" stroke-width="1" stroke-dasharray="3,2"/>
+              <circle cx="380" cy="90" r="4" fill="#B33F32"/>
+              <text x="340" y="115" font-size="11" fill="#B33F32">视网膜（像方焦点）</text>
+              <text x="20" y="150" font-size="12" fill="#28345C">总屈光力 ≈ 60D　　眼轴长度 ≈ 24mm</text>
+              <text x="20" y="168" font-size="11" fill="#5C6B6E">角膜贡献约70%（≈43D），晶状体贡献约30%</text>
+            </g>
+          </svg>
+          <figcaption>FIG O1-1 · 简化模型眼：将复杂的眼屈光系统简化为单一折射面便于计算</figcaption>
+        </div>
+        <p>真实的眼屈光系统由角膜前后表面、晶状体前后表面等多个折射面构成，计算复杂。视光学中常用<strong>简化模型眼（reduced eye）</strong>，将整个系统等效为一个单一折射面，总屈光力约<strong>60.00D</strong>，眼轴长度约<strong>24mm</strong>，用于近似计算和教学理解，是理解各类屈光不正光学本质的基础工具。</p>
+      </div>
+
+      <div class="section">
+        <h3>顶点距离：镜片度数换算的隐藏变量</h3>
+        <p><strong>顶点距离（vertex distance）</strong>是指镜片后表面到角膜前表面的距离，框架眼镜的常规顶点距离约12mm。同一屈光不正，镜片距眼睛越远，为达到相同矫正效果所需的镜片度数就会发生变化——这一效应在<strong>高度数（通常±4.00D以上）</strong>时尤为明显，是框架眼镜与隐形眼镜度数换算、以及试镜架验光结果转换为最终处方时必须考虑的关键因素。</p>
+        <div class="alert-box">
+          <span class="tag">易混淆点</span>
+          顶点距离效应的方向规律：负镜片（矫正近视）距眼睛越远，所需负度数<strong>越大</strong>；正镜片（矫正远视）距眼睛越远，所需正度数<strong>越小</strong>。这也是为什么高度近视患者改戴隐形眼镜（顶点距离趋近于0）时，实际所需度数通常会比框架眼镜度数<strong>低</strong>一些。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>柱镜与光学十字：散光的表达方式</h3>
+        <p>散光是指眼球在不同子午线方向上屈光力不一致，需要用<strong>柱镜</strong>矫正。柱镜只在与其轴向垂直的方向上产生屈光力，沿轴向本身则不产生屈光力，这一特性可以用<strong>光学十字（power cross）</strong>直观表示——十字的两条线分别代表两个主子午线方向及各自的屈光力数值，是理解散光处方（如"-1.00 DC × 180"）的核心工具。</p>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          散光处方书写格式：球镜度数 / 柱镜度数 × 轴向角度（如 -2.00 DS / -1.00 DC × 90），轴向角度范围是0°~180°，代表柱镜轴的空间朝向，而非柱镜产生屈光力的方向——柱镜屈光力实际作用在与轴向垂直的方向上，这是初学者最容易搞反的一点。
+        </div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-head"><h3>随堂小测 · 视觉光学基础</h3><span class="quiz-progress"><span class="cur">1</span>/<span class="tot">5</span></span></div>
+
+        <div class="q-block active" data-answer="2">
+          <div class="q-text">1. 某透镜焦距为0.25米，其屈光力是？</div>
+          <button class="q-opt">0.25D</button>
+          <button class="q-opt">2.50D</button>
+          <button class="q-opt">4.00D</button>
+          <button class="q-opt">40.00D</button>
+          <div class="q-explain">屈光度 D = 1/f(米)，f = 0.25米，故 D = 1/0.25 = 4.00D。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">2. 简化模型眼的总屈光力约为多少？</div>
+          <button class="q-opt">约43D</button>
+          <button class="q-opt">约60D</button>
+          <button class="q-opt">约20D</button>
+          <button class="q-opt">约100D</button>
+          <div class="q-explain">简化模型眼将整个眼屈光系统等效为单一折射面，总屈光力约60.00D，其中角膜贡献约70%（约43D）。</div>
+        </div>
+
+        <div class="q-block" data-answer="0">
+          <div class="q-text">3. 高度近视患者从框架眼镜改戴隐形眼镜，由于顶点距离趋近于0，实际所需的负镜度数通常会？</div>
+          <button class="q-opt">比框架眼镜度数低（绝对值更小）</button>
+          <button class="q-opt">比框架眼镜度数高（绝对值更大）</button>
+          <button class="q-opt">完全不变</button>
+          <button class="q-opt">变为正镜</button>
+          <div class="q-explain">负镜片距眼睛越远，所需负度数越大；顶点距离趋近于0的隐形眼镜，实际所需负度数会比框架眼镜（顶点距离约12mm）低（绝对值更小）。</div>
+        </div>
+
+        <div class="q-block" data-answer="3">
+          <div class="q-text">4. 柱镜产生屈光力的方向是？</div>
+          <button class="q-opt">与轴向相同的方向</button>
+          <button class="q-opt">柱镜不产生任何屈光力</button>
+          <button class="q-opt">与轴向成45度角的方向</button>
+          <button class="q-opt">与轴向垂直的方向</button>
+          <div class="q-explain">柱镜只在与其轴向垂直的方向上产生屈光力，沿轴向本身不产生屈光力，这是理解光学十字和散光处方的核心。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">5. 处方"-2.00 DS / -1.00 DC × 90"中，"× 90"表示的是？</div>
+          <button class="q-opt">柱镜产生屈光力的方向为90度</button>
+          <button class="q-opt">柱镜轴的空间朝向为90度</button>
+          <button class="q-opt">球镜度数为90度</button>
+          <button class="q-opt">检查用时90分钟</button>
+          <div class="q-explain">轴向角度代表柱镜轴的空间朝向（0°~180°），而柱镜实际产生的屈光力作用在与该轴向垂直的方向上，两者不能混淆。</div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="ghost" data-prev disabled>上一题</button>
+          <button data-next>下一题</button>
+        </div>
+        <div class="quiz-result"><div class="score"></div><p>回顾错题，返回上方对应知识点巩固记忆</p></div>
+      </div>
+
+      <div class="chapter-footer-nav">
+        <a href="../optometry-index.html"><span class="lbl">← 返回</span>视光学首页</a>
+        <a class="next" href="02-refraction-technique.html"><span class="lbl">下一章 →</span>验光技术</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      内容依据国内视光学/眼视光医学专业课程大纲自行编写整理，用于考点复习，不替代官方教材与临床指南。
+    </footer>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

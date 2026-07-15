@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 · 隐形眼镜学 · 视光学习站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="optometry">
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../optometry-index.html" style="text-decoration:none;">
+        <svg class="eyemark" viewBox="0 0 40 40"><path d="M2 20C8 8 32 8 38 20C32 32 8 32 2 20Z" fill="none" stroke="#EAF3F2" stroke-width="2"/><circle cx="20" cy="20" r="7" fill="#D98A3D"/><circle cx="20" cy="20" r="3" fill="#28345C"/></svg>
+        <h1>视光学习站</h1>
+      </a>
+      <p>规培备考 · 考点导向 · 图文精讲</p>
+    </div>
+    <div class="nav-group-label">视觉光学与验光</div>
+    <a class="nav-item" href="01-optics-basics.html"><span class="num">O1</span>视觉光学基础</a>
+    <a class="nav-item" href="02-refraction-technique.html"><span class="num">O2</span>验光技术</a>
+    <a class="nav-item" href="03-binocular-vision.html"><span class="num">O3</span>双眼视觉功能与视疲劳</a>
+    <div class="nav-group-label">屈光矫正与近视防控</div>
+    <a class="nav-item" href="04-orthokeratology.html"><span class="num">O4</span>角膜塑形镜与近视防控</a>
+    <a class="nav-item" href="05-presbyopia.html"><span class="num">O5</span>老视与渐进多焦点镜片</a>
+    <a class="nav-item active" href="06-contact-lens.html"><span class="num">O6</span>隐形眼镜学</a>
+    <div class="nav-group-label">视功能康复</div>
+    <a class="nav-item" href="07-low-vision.html"><span class="num">O7</span>低视力康复</a>
+  </nav>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰ 章节目录</button>
+      <a class="home-link" href="../optometry-index.html">← 返回首页</a>
+    </div>
+
+    <section class="chapter" id="ch-contact-lens">
+      <div class="chapter-head"><span class="chnum">CH.O6</span><h2>隐形眼镜学</h2></div>
+
+      <div class="section">
+        <h3>隐形眼镜的材质分类</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>软性角膜接触镜（水凝胶/硅水凝胶）</h4><p>材质柔软、舒适度高、初戴适应快，是目前应用最广泛的隐形眼镜类型；按更换周期又分日抛、双周抛、月抛、年抛等。</p></div>
+          <div class="compare-card"><h4>硬性透气性角膜接触镜（RGP）</h4><p>材质相对坚硬，成像质量更佳（尤其对不规则散光矫正效果好），透氧性高，但初戴舒适度不如软镜，需要一定适应期。</p></div>
+        </div>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          <strong>硅水凝胶材质</strong>是现代软性隐形眼镜的主流方向：其透氧性（Dk/t值）显著高于传统水凝胶材质，能大幅减少角膜长期缺氧相关的并发症风险，是材质发展史上的重要突破。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>验配核心参数</h3>
+        <div class="figure">
+          <svg viewBox="0 0 460 150" width="100%">
+            <rect width="460" height="150" fill="#FAFAF7"/>
+            <g font-family="Noto Sans SC" font-size="12" fill="#16232A">
+              <text x="20" y="22" font-weight="600">基弧(BC)对配适的影响</text>
+              <rect x="20" y="40" width="200" height="90" rx="8" fill="#F6E1DD" stroke="#B33F32"/>
+              <text x="30" y="62" font-weight="600" fill="#B33F32">基弧过陡</text>
+              <text x="30" y="84" font-size="11">镜片活动度不足</text>
+              <text x="30" y="102" font-size="11">泪液交换受阻 → 缺氧</text>
+              <rect x="240" y="40" width="200" height="90" rx="8" fill="#F6E4CC" stroke="#D98A3D"/>
+              <text x="250" y="62" font-weight="600" fill="#D98A3D">基弧过平</text>
+              <text x="250" y="84" font-size="11">镜片活动度过大</text>
+              <text x="250" y="102" font-size="11">异物感 / 镜片易脱位</text>
+            </g>
+          </svg>
+          <figcaption>FIG O6-1 · 基弧过陡/过平对配适效果的影响</figcaption>
+        </div>
+        <p>隐形眼镜验配的核心参数包括<strong>基弧（Base Curve, BC）</strong>、<strong>直径（Diameter）</strong>、屈光度和透氧性。基弧决定了镜片与角膜的贴合程度：基弧过陡（曲率半径过小）会导致镜片活动度不足、泪液交换受阻，增加缺氧风险；基弧过平则活动度过大，容易产生异物感甚至镜片脱位。</p>
+      </div>
+
+      <div class="section">
+        <h3>常见并发症</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>角膜缺氧相关改变</h4><p>长期透氧不足可诱发角膜新生血管形成等慢性缺氧改变，是评估长期佩戴安全性的重要指标。</p></div>
+          <div class="compare-card"><h4>巨乳头性结膜炎（GPC）</h4><p>与镜片表面蛋白沉淀及机械刺激相关，睑结膜出现巨大乳头，伴痒感、分泌物增多，多见于长期佩戴护理不当者。</p></div>
+          <div class="compare-card"><h4>微生物性角膜炎</h4><p>隐形眼镜相关并发症中<strong>最严重</strong>的一类，与过夜配戴（非专门设计的日戴型镜片）、护理不规范密切相关，处理不及时可致角膜瘢痕甚至视力丧失。</p></div>
+        </div>
+        <div class="alert-box">
+          <span class="tag">易混淆点</span>
+          隐形眼镜相关微生物性角膜炎的最主要危险因素是<strong>过夜配戴普通日戴型软镜</strong>——这一点与第O4章角膜塑形镜（本身是专门设计的夜戴型镜片）不同，两者虽然都涉及"过夜"这一环节，但风险性质和设计初衷完全不同，不应混为一谈。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>配戴与护理原则</h3>
+        <ul>
+          <li>严格遵循镜片设计的更换周期（日抛即戴即弃，月抛不超期使用），不可自行延长使用时间以"节省成本"。</li>
+          <li>除专门设计的可过夜配戴镜片外，普通软性隐形眼镜应避免过夜配戴。</li>
+          <li><strong>禁止用自来水清洗镜片或镜盒</strong>，自来水中的棘阿米巴原虫是隐形眼镜相关重症角膜炎的重要病原体之一。</li>
+          <li>定期复查角膜健康状况，出现眼红、疼痛、畏光等异常症状应立即停戴并就诊，不可自行观察等待。</li>
+        </ul>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-head"><h3>随堂小测 · 隐形眼镜学</h3><span class="quiz-progress"><span class="cur">1</span>/<span class="tot">5</span></span></div>
+
+        <div class="q-block active" data-answer="2">
+          <div class="q-text">1. 现代软性隐形眼镜的主流材质，相较传统水凝胶最大的优势是？</div>
+          <button class="q-opt">价格更低</button>
+          <button class="q-opt">颜色选择更多</button>
+          <button class="q-opt">透氧性（Dk/t值）显著更高，减少缺氧相关并发症</button>
+          <button class="q-opt">完全不需要护理</button>
+          <div class="q-explain">硅水凝胶材质的透氧性显著高于传统水凝胶，能大幅减少角膜长期缺氧相关的并发症风险，是现代软镜材质发展的重要突破。</div>
+        </div>
+
+        <div class="q-block" data-answer="0">
+          <div class="q-text">2. 隐形眼镜基弧过陡（曲率半径过小）会导致？</div>
+          <button class="q-opt">镜片活动度不足，泪液交换受阻，增加缺氧风险</button>
+          <button class="q-opt">镜片容易脱位</button>
+          <button class="q-opt">异物感明显增加</button>
+          <button class="q-opt">对配适完全没有影响</button>
+          <div class="q-explain">基弧过陡会导致镜片与角膜贴合过紧、活动度不足，泪液交换受阻，从而增加角膜缺氧的风险。</div>
+        </div>
+
+        <div class="q-block" data-answer="3">
+          <div class="q-text">3. 隐形眼镜相关并发症中最严重的一类是？</div>
+          <button class="q-opt">轻度异物感</button>
+          <button class="q-opt">镜片轻微沉淀</button>
+          <button class="q-opt">短暂视物模糊</button>
+          <button class="q-opt">微生物性角膜炎</button>
+          <div class="q-explain">微生物性角膜炎是隐形眼镜相关并发症中最严重的一类，与过夜配戴、护理不规范密切相关，处理不及时可致角膜瘢痕甚至视力丧失。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">4. 隐形眼镜镜片和镜盒护理，绝对禁止的做法是？</div>
+          <button class="q-opt">使用专用护理液</button>
+          <button class="q-opt">用自来水清洗镜片或镜盒</button>
+          <button class="q-opt">按周期更换镜片</button>
+          <button class="q-opt">定期复查角膜健康</button>
+          <div class="q-explain">自来水中的棘阿米巴原虫是隐形眼镜相关重症角膜炎的重要病原体之一，绝对禁止用自来水清洗镜片或镜盒。</div>
+        </div>
+
+        <div class="q-block" data-answer="2">
+          <div class="q-text">5. 关于GPC（巨乳头性结膜炎），下列说法正确的是？</div>
+          <button class="q-opt">与隐形眼镜佩戴完全无关</button>
+          <button class="q-opt">是最严重的隐形眼镜并发症</button>
+          <button class="q-opt">与镜片表面蛋白沉淀及机械刺激相关，表现为睑结膜巨大乳头伴痒感</button>
+          <button class="q-opt">只发生在硬性隐形眼镜佩戴者</button>
+          <div class="q-explain">GPC与镜片表面蛋白沉淀及机械刺激相关，表现为睑结膜出现巨大乳头，伴痒感、分泌物增多，多见于长期佩戴护理不当者，可发生于软镜和硬镜佩戴者。</div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="ghost" data-prev disabled>上一题</button>
+          <button data-next>下一题</button>
+        </div>
+        <div class="quiz-result"><div class="score"></div><p>回顾错题，返回上方对应知识点巩固记忆</p></div>
+      </div>
+
+      <div class="chapter-footer-nav">
+        <a href="05-presbyopia.html"><span class="lbl">← 上一章</span>老视与渐进多焦点镜片</a>
+        <a class="next" href="07-low-vision.html"><span class="lbl">下一章 →</span>低视力康复</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      内容依据国内视光学/眼视光医学专业课程大纲自行编写整理，用于考点复习，不替代官方教材与临床指南。
+    </footer>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

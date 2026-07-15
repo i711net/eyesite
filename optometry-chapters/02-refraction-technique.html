@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 · 验光技术 · 视光学习站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="optometry">
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../optometry-index.html" style="text-decoration:none;">
+        <svg class="eyemark" viewBox="0 0 40 40"><path d="M2 20C8 8 32 8 38 20C32 32 8 32 2 20Z" fill="none" stroke="#EAF3F2" stroke-width="2"/><circle cx="20" cy="20" r="7" fill="#D98A3D"/><circle cx="20" cy="20" r="3" fill="#28345C"/></svg>
+        <h1>视光学习站</h1>
+      </a>
+      <p>规培备考 · 考点导向 · 图文精讲</p>
+    </div>
+    <div class="nav-group-label">视觉光学与验光</div>
+    <a class="nav-item" href="01-optics-basics.html"><span class="num">O1</span>视觉光学基础</a>
+    <a class="nav-item active" href="02-refraction-technique.html"><span class="num">O2</span>验光技术</a>
+    <a class="nav-item" href="03-binocular-vision.html"><span class="num">O3</span>双眼视觉功能与视疲劳</a>
+    <div class="nav-group-label">屈光矫正与近视防控</div>
+    <a class="nav-item" href="04-orthokeratology.html"><span class="num">O4</span>角膜塑形镜与近视防控</a>
+    <a class="nav-item" href="05-presbyopia.html"><span class="num">O5</span>老视与渐进多焦点镜片</a>
+    <a class="nav-item" href="06-contact-lens.html"><span class="num">O6</span>隐形眼镜学</a>
+    <div class="nav-group-label">视功能康复</div>
+    <a class="nav-item" href="07-low-vision.html"><span class="num">O7</span>低视力康复</a>
+  </nav>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰ 章节目录</button>
+      <a class="home-link" href="../optometry-index.html">← 返回首页</a>
+    </div>
+
+    <section class="chapter" id="ch-refraction-technique">
+      <div class="chapter-head"><span class="chnum">CH.O2</span><h2>验光技术</h2></div>
+
+      <div class="section">
+        <h3>验光的两大类方法</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>客观验光</h4><p>依靠仪器或检查者观察获得屈光状态数据，不依赖患者主观反馈，包括检影镜验光、电脑验光仪（自动验光仪）等。</p></div>
+          <div class="compare-card"><h4>主觉验光</h4><p>依靠患者对视标清晰度的主观判断和反馈，逐步精调镜片度数，是最终确定处方的关键步骤，常用综合验光仪完成。</p></div>
+        </div>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          客观验光提供的是一个"起点估计值"，主觉验光才是确定最终处方的核心环节——两者是先后接续、互相验证的关系，而非二选一。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>检影镜验光（Retinoscopy）</h3>
+        <div class="figure">
+          <svg viewBox="0 0 480 160" width="100%">
+            <rect width="480" height="160" fill="#FAFAF7"/>
+            <g font-family="Noto Sans SC" font-size="12" fill="#16232A">
+              <text x="20" y="22" font-weight="600">检影镜光影移动方向与屈光不正的对应关系</text>
+              <rect x="20" y="40" width="130" height="95" rx="8" fill="#E8EDF6" stroke="#3D5A99"/>
+              <text x="30" y="62" font-weight="600" fill="#3D5A99">顺动</text>
+              <text x="30" y="84" font-size="11">光影移动方向</text>
+              <text x="30" y="102" font-size="11">与镜动方向一致</text>
+              <text x="30" y="120" font-size="11" fill="#5C6B6E">提示：欠矫/远视</text>
+              <rect x="175" y="40" width="130" height="95" rx="8" fill="#F6E1DD" stroke="#B33F32"/>
+              <text x="185" y="62" font-weight="600" fill="#B33F32">逆动</text>
+              <text x="185" y="84" font-size="11">光影移动方向</text>
+              <text x="185" y="102" font-size="11">与镜动方向相反</text>
+              <text x="185" y="120" font-size="11" fill="#5C6B6E">提示：过矫/近视</text>
+              <rect x="330" y="40" width="130" height="95" rx="8" fill="#F6E4CC" stroke="#D98A3D"/>
+              <text x="340" y="62" font-weight="600" fill="#D98A3D">中和点</text>
+              <text x="340" y="84" font-size="11">光影充满瞳孔</text>
+              <text x="340" y="102" font-size="11">不再移动</text>
+              <text x="340" y="120" font-size="11" fill="#5C6B6E">此时镜片度数即结果</text>
+            </g>
+          </svg>
+          <figcaption>FIG O2-1 · 检影镜验光的核心判断逻辑：光影移动方向与中和点</figcaption>
+        </div>
+        <p>检影镜验光是通过检影镜向眼内投射光带，观察瞳孔区反光（"影动"）随检影镜转动的移动方向和速度，逐步增减镜片，直至达到<strong>中和点</strong>（反光充满瞳孔、不再移动）来确定屈光状态的客观验光方法。这是一项高度依赖检查者经验的技术，即使在自动验光仪普及的今天，仍是婴幼儿、无法配合主觉验光患者的重要甚至唯一验光手段。</p>
+        <div class="alert-box">
+          <span class="tag">易混淆点</span>
+          "顺动"提示欠矫（现有镜片度数不够正/负得不够），需要继续增加正镜或减少负镜；"逆动"提示过矫，方向相反——这两个术语初学时极易混淆，建议结合"镜动"与"影动"方向是否一致这一根本判断标准记忆，而非死记"顺动=远视、逆动=近视"这类结论（结论本身依赖于检影镜到眼的工作距离等前提条件）。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>电脑验光仪（自动验光仪）</h3>
+        <p>电脑验光仪通过红外光自动测量眼的屈光状态，操作简便、速度快，广泛用于门诊初筛。但其结果容易受<strong>调节痉挛（患者注视仪器内部目标时不自主产生的调节反应）</strong>干扰，尤其在青少年儿童中，常导致近视度数测量结果偏高、远视度数偏低。因此电脑验光仪结果只能作为验光起点，不能直接作为配镜处方。</p>
+      </div>
+
+      <div class="section">
+        <h3>睫状肌麻痹验光：儿童验光的金标准</h3>
+        <p>为消除调节因素对验光结果的干扰，临床对儿童、青少年（尤其是首次验光、内斜视或明显远视可疑者）常规采用<strong>睫状肌麻痹验光（散瞳验光）</strong>：使用睫状肌麻痹剂（如阿托品凝胶、托吡卡胺滴眼液等）暂时麻痹睫状肌、消除调节，此时测得的屈光度才最接近眼的真实屈光状态，是儿童验光公认的金标准。</p>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          未经睫状肌麻痹的儿童验光结果，往往会因调节痉挛而低估远视度数、高估近视度数——这也是临床上强调"儿童验光必须散瞳"的核心原因，尤其是怀疑调节性内斜视的患儿，未散瞳验光可能严重低估其远视程度而漏诊。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>主觉验光精调工具</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>红绿测试（Duochrome test）</h4><p>利用光的色差原理，红光聚焦稍靠后、绿光聚焦稍靠前，通过比较红底和绿底视标的清晰度判断终点是否过矫或欠矫。</p></div>
+          <div class="compare-card"><h4>交叉柱镜（Jackson Cross Cylinder）</h4><p>用于散光轴向和度数的精细调整，通过让患者比较两个互为镜像的柱镜位置下视标的清晰度，逐步逼近最佳散光矫正值。</p></div>
+        </div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-head"><h3>随堂小测 · 验光技术</h3><span class="quiz-progress"><span class="cur">1</span>/<span class="tot">5</span></span></div>
+
+        <div class="q-block active" data-answer="1">
+          <div class="q-text">1. 客观验光与主觉验光的关系是？</div>
+          <button class="q-opt">两者只能二选一，互相排斥</button>
+          <button class="q-opt">客观验光提供起点估计，主觉验光确定最终处方，两者接续互补</button>
+          <button class="q-opt">主觉验光已完全被客观验光取代</button>
+          <button class="q-opt">两者结果必然完全一致</button>
+          <div class="q-explain">客观验光（检影镜、电脑验光仪）提供一个起点估计值，主觉验光在此基础上通过患者主观反馈逐步精调，最终确定处方，两者是先后接续、互相验证的关系。</div>
+        </div>
+
+        <div class="q-block" data-answer="2">
+          <div class="q-text">2. 检影镜验光中，反光充满瞳孔且不再随镜片转动而移动，称为？</div>
+          <button class="q-opt">顺动</button>
+          <button class="q-opt">逆动</button>
+          <button class="q-opt">中和点</button>
+          <button class="q-opt">调节痉挛</button>
+          <div class="q-explain">当光影移动到不再移动、完全充满瞳孔时，即达到"中和点"，此时所加的镜片度数就是检影验光的结果。</div>
+        </div>
+
+        <div class="q-block" data-answer="0">
+          <div class="q-text">3. 电脑验光仪结果最容易受什么因素干扰，导致结果不能直接作为配镜处方？</div>
+          <button class="q-opt">调节痉挛</button>
+          <button class="q-opt">环境温度</button>
+          <button class="q-opt">患者身高</button>
+          <button class="q-opt">检查时间长短</button>
+          <div class="q-explain">电脑验光仪测量时患者注视仪器内部目标容易产生不自主调节反应（调节痉挛），尤其在青少年儿童中影响明显，因此其结果只能作为验光起点。</div>
+        </div>
+
+        <div class="q-block" data-answer="3">
+          <div class="q-text">4. 儿童验光公认的金标准是？</div>
+          <button class="q-opt">仅凭电脑验光仪单次测量</button>
+          <button class="q-opt">仅凭家长描述症状</button>
+          <button class="q-opt">仅凭裸眼视力表检查</button>
+          <button class="q-opt">睫状肌麻痹验光（散瞳验光）</button>
+          <div class="q-explain">睫状肌麻痹验光通过消除调节因素的干扰，测得的屈光度最接近眼的真实屈光状态，是儿童（尤其怀疑调节性内斜视或明显远视者）验光公认的金标准。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">5. 未经散瞳的儿童验光结果，容易出现的偏差趋势是？</div>
+          <button class="q-opt">高估远视度数、低估近视度数</button>
+          <button class="q-opt">低估远视度数、高估近视度数</button>
+          <button class="q-opt">对散光度数完全没有影响</button>
+          <button class="q-opt">结果总是完全准确，无偏差</button>
+          <div class="q-explain">未散瞳时调节痉挛会使眼产生额外的正屈光力，从而掩盖部分远视（使远视度数被低估）、加重近视测量结果（使近视度数被高估），这是强调儿童验光必须散瞳的核心原因。</div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="ghost" data-prev disabled>上一题</button>
+          <button data-next>下一题</button>
+        </div>
+        <div class="quiz-result"><div class="score"></div><p>回顾错题，返回上方对应知识点巩固记忆</p></div>
+      </div>
+
+      <div class="chapter-footer-nav">
+        <a href="01-optics-basics.html"><span class="lbl">← 上一章</span>视觉光学基础</a>
+        <a class="next" href="03-binocular-vision.html"><span class="lbl">下一章 →</span>双眼视觉功能与视疲劳</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      内容依据国内视光学/眼视光医学专业课程大纲自行编写整理，用于考点复习，不替代官方教材与临床指南。
+    </footer>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

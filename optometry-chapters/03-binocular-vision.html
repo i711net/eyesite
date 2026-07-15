@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 · 双眼视觉功能与视疲劳 · 视光学习站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="optometry">
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a href="../optometry-index.html" style="text-decoration:none;">
+        <svg class="eyemark" viewBox="0 0 40 40"><path d="M2 20C8 8 32 8 38 20C32 32 8 32 2 20Z" fill="none" stroke="#EAF3F2" stroke-width="2"/><circle cx="20" cy="20" r="7" fill="#D98A3D"/><circle cx="20" cy="20" r="3" fill="#28345C"/></svg>
+        <h1>视光学习站</h1>
+      </a>
+      <p>规培备考 · 考点导向 · 图文精讲</p>
+    </div>
+    <div class="nav-group-label">视觉光学与验光</div>
+    <a class="nav-item" href="01-optics-basics.html"><span class="num">O1</span>视觉光学基础</a>
+    <a class="nav-item" href="02-refraction-technique.html"><span class="num">O2</span>验光技术</a>
+    <a class="nav-item active" href="03-binocular-vision.html"><span class="num">O3</span>双眼视觉功能与视疲劳</a>
+    <div class="nav-group-label">屈光矫正与近视防控</div>
+    <a class="nav-item" href="04-orthokeratology.html"><span class="num">O4</span>角膜塑形镜与近视防控</a>
+    <a class="nav-item" href="05-presbyopia.html"><span class="num">O5</span>老视与渐进多焦点镜片</a>
+    <a class="nav-item" href="06-contact-lens.html"><span class="num">O6</span>隐形眼镜学</a>
+    <div class="nav-group-label">视功能康复</div>
+    <a class="nav-item" href="07-low-vision.html"><span class="num">O7</span>低视力康复</a>
+  </nav>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰ 章节目录</button>
+      <a class="home-link" href="../optometry-index.html">← 返回首页</a>
+    </div>
+
+    <section class="chapter" id="ch-binocular">
+      <div class="chapter-head"><span class="chnum">CH.O3</span><h2>双眼视觉功能与视疲劳</h2></div>
+
+      <div class="section">
+        <h3>调节与集合：看近时的两大联动机制</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>调节（Accommodation）</h4><p>睫状肌收缩、悬韧带松弛，晶状体变凸、屈光力增加，使近处物体成像清晰。调节幅度随年龄增长而下降，是老视发生的生理基础。</p></div>
+          <div class="compare-card"><h4>集合（Convergence）</h4><p>双眼同时向鼻侧转动，使视轴对准同一近处目标，避免复视。看近时集合与调节同步发生，两者存在紧密的联动关系。</p></div>
+        </div>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          调节幅度随年龄下降的经验公式（Hofstetter公式）：最小调节幅度 ≈ 15 − 0.25×年龄（岁），可用于快速估算不同年龄段的生理性调节储备，是理解老视发生年龄规律的量化工具。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>AC/A比率：调节与集合联动的量化指标</h3>
+        <div class="figure">
+          <svg viewBox="0 0 460 150" width="100%">
+            <rect width="460" height="150" fill="#FAFAF7"/>
+            <g font-family="Noto Sans SC" font-size="12" fill="#16232A">
+              <text x="20" y="24" font-weight="600">AC/A比率示意</text>
+              <rect x="20" y="45" width="130" height="80" rx="8" fill="#E8EDF6" stroke="#3D5A99"/>
+              <text x="30" y="68" font-weight="600" fill="#3D5A99">调节 +1.00D</text>
+              <text x="30" y="90" font-size="11">睫状肌收缩</text>
+              <path d="M155 85 L185 85" stroke="#5C6B6E" stroke-width="2" marker-end="url(#aO3)"/>
+              <rect x="185" y="45" width="150" height="80" rx="8" fill="#F6E4CC" stroke="#D98A3D"/>
+              <text x="195" y="68" font-weight="600" fill="#D98A3D">诱发集合</text>
+              <text x="195" y="90" font-size="11">正常范围 3~5 PD</text>
+              <text x="195" y="108" font-size="10" fill="#5C6B6E">（每增加1D调节）</text>
+            </g>
+            <defs><marker id="aO3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5C6B6E"/></marker></defs>
+          </svg>
+          <figcaption>FIG O3-1 · AC/A比率：每单位调节诱发的集合量</figcaption>
+        </div>
+        <p><strong>AC/A比率（调节性集合与调节的比值）</strong>是指每增加1.00D调节所诱发的集合量（以棱镜度PD计），正常范围约<strong>3~5 PD/D</strong>。AC/A比率异常（过高或过低）是多种双眼视功能异常（如调节性内斜视）的重要病理生理基础，也是视光学临床评估双眼视功能的核心量化指标之一。</p>
+      </div>
+
+      <div class="section">
+        <h3>隐斜视：融合控制下的潜在眼位偏斜</h3>
+        <p><strong>隐斜视（phoria）</strong>是指在双眼融合功能控制下，眼位保持正位，但一旦融合被打破（如遮盖一眼），该眼便会出现潜在的偏斜倾向，去遮盖时可见眼球快速回位运动。这与<strong>显性斜视（tropia）</strong>——融合功能已无法控制、眼位持续偏斜——有本质区别。</p>
+        <div class="alert-box">
+          <span class="tag">易混淆点</span>
+          隐斜视人群中普遍存在（多数人都有小度数生理性隐斜），本身不一定致病；只有当隐斜度数较大、或患者融合储备不足以代偿时，才会引发视疲劳等症状。因此发现隐斜视不等于必须矫正处理，需结合症状和融合功能储备综合判断。
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>视疲劳的常见病因</h3>
+        <div class="compare-grid">
+          <div class="compare-card"><h4>未矫正的屈光不正</h4><p>尤其是散光和远视，眼睛需要额外调节努力才能获得清晰视觉，是视疲劳最常见、最基础的病因。</p></div>
+          <div class="compare-card"><h4>调节功能异常</h4><p>调节不足或调节灵活度下降，看近视物易疲劳、字迹易"游走"。</p></div>
+          <div class="compare-card"><h4>集合不足（Convergence Insufficiency）</h4><p>近距离用眼后眼胀、串行、阅读困难，视近点后退，是双眼视功能相关视疲劳中最常见的病因之一，可通过针对性视觉训练有效改善。</p></div>
+        </div>
+        <div class="key-point">
+          <span class="tag">考点速记</span>
+          评估视疲劳患者的思路应遵循"先排除屈光问题，再评估调节功能，最后评估集合/双眼视功能"的顺序——因为未矫正的屈光不正是最常见也最容易被忽视的基础病因，临床上应首先确认验光处方是否准确、佩戴是否合适。
+        </div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-head"><h3>随堂小测 · 双眼视觉功能与视疲劳</h3><span class="quiz-progress"><span class="cur">1</span>/<span class="tot">5</span></span></div>
+
+        <div class="q-block active" data-answer="1">
+          <div class="q-text">1. 根据Hofstetter公式估算调节幅度，30岁人群的最小调节幅度约为？</div>
+          <button class="q-opt">约15D</button>
+          <button class="q-opt">约7.50D</button>
+          <button class="q-opt">约22.50D</button>
+          <button class="q-opt">约0D</button>
+          <div class="q-explain">最小调节幅度 ≈ 15 − 0.25×年龄 = 15 − 0.25×30 = 15 − 7.5 = 7.5D。</div>
+        </div>
+
+        <div class="q-block" data-answer="2">
+          <div class="q-text">2. AC/A比率的正常范围约为？</div>
+          <button class="q-opt">0.5~1 PD/D</button>
+          <button class="q-opt">10~15 PD/D</button>
+          <button class="q-opt">3~5 PD/D</button>
+          <button class="q-opt">与调节无关</button>
+          <div class="q-explain">AC/A比率是指每增加1.00D调节所诱发的集合量，正常范围约3~5 PD/D，是评估双眼视功能的核心量化指标。</div>
+        </div>
+
+        <div class="q-block" data-answer="0">
+          <div class="q-text">3. 隐斜视与显性斜视最本质的区别是？</div>
+          <button class="q-opt">隐斜视有融合功能控制眼位，显性斜视融合功能无法控制</button>
+          <button class="q-opt">隐斜视一定需要手术矫正</button>
+          <button class="q-opt">显性斜视患者视力必然正常</button>
+          <button class="q-opt">两者完全没有区别</button>
+          <div class="q-explain">隐斜视在融合功能控制下眼位保持正位，只有打破融合（如遮盖）才显现偏斜倾向；显性斜视是融合功能已无法控制、眼位持续偏斜的状态，这是两者的本质区别。</div>
+        </div>
+
+        <div class="q-block" data-answer="3">
+          <div class="q-text">4. 视疲劳患者最常见、最基础、临床应首先排查的病因是？</div>
+          <button class="q-opt">脑部肿瘤</button>
+          <button class="q-opt">先天性青光眼</button>
+          <button class="q-opt">视网膜脱离</button>
+          <button class="q-opt">未矫正的屈光不正</button>
+          <div class="q-explain">未矫正的屈光不正（尤其散光和远视）是视疲劳最常见、最基础的病因，评估视疲劳应首先确认验光处方是否准确、佩戴是否合适。</div>
+        </div>
+
+        <div class="q-block" data-answer="1">
+          <div class="q-text">5. 近距离用眼后眼胀、串行、阅读困难、视近点后退，最可能的双眼视功能异常是？</div>
+          <button class="q-opt">调节过度</button>
+          <button class="q-opt">集合不足</button>
+          <button class="q-opt">外斜视（显性）</button>
+          <button class="q-opt">散光</button>
+          <div class="q-explain">集合不足是双眼视功能相关视疲劳中最常见的病因之一，典型表现为近距离用眼后眼胀、串行、阅读困难、视近点后退，可通过针对性视觉训练改善。</div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="ghost" data-prev disabled>上一题</button>
+          <button data-next>下一题</button>
+        </div>
+        <div class="quiz-result"><div class="score"></div><p>回顾错题，返回上方对应知识点巩固记忆</p></div>
+      </div>
+
+      <div class="chapter-footer-nav">
+        <a href="02-refraction-technique.html"><span class="lbl">← 上一章</span>验光技术</a>
+        <a class="next" href="04-orthokeratology.html"><span class="lbl">下一章 →</span>角膜塑形镜与近视防控</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      内容依据国内视光学/眼视光医学专业课程大纲自行编写整理，用于考点复习，不替代官方教材与临床指南。
+    </footer>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>
