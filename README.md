@@ -61,9 +61,9 @@ git push -u origin main
 
 ## 三条学习轨道
 
-- `index.html` / `chapters/` —— 西医《眼科学》，19章全部完成
+- `index.html` / `chapters/` —— 西医《眼科学》，**全部22章已完成**：19章疾病主干 + 3章专题拓展（CH20眼科药理学总论、CH21屈光手术学、CH22眼科影像学专题），共110道测验题
 - `tcm-index.html` / `tcm-chapters/` —— 中医《中医眼科学》，19章全部完成
-- `optometry-index.html` / `optometry-chapters/` —— 视光学，**全部7章已完成**：O1视觉光学基础、O2验光技术、O3双眼视觉功能与视疲劳、O4角膜塑形镜与近视防控、O5老视与渐进多焦点镜片、O6隐形眼镜学、O7低视力康复，共35道测验题
+- `optometry-index.html` / `optometry-chapters/` —— 视光学，**全部9章已完成**：O1-O7基础理论 + O8屈光不正配镜实例精讲（近视足矫/远视伴散光/双光镜实操案例）+ O9儿童屈光发育案例分析（真假性近视/远视储备/眼轴测算案例），共45道测验题
 - 三个首页顶部都有"西医眼科学 / 中医眼科学 / 视光学"切换标签，可随时互跳
 - 视光学页面通过 `<body class="optometry">` 应用靛蓝+琥珀主题（区别于西医青蓝、中医暖棕），共用同一份 `assets/style.css` 和 `assets/site.js`
 
